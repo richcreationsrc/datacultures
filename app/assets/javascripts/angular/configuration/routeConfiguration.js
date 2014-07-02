@@ -13,11 +13,11 @@
       // controller: 'SplashController',
       // isPublic: true
     }).
-    when('/leaderboard', {
-      templateUrl: 'leaderboard.html'
+    when('/engagement_index', {
+      templateUrl: 'engagement_index.html'
     }).
-    when('/canvas/embedded/leaderboard', {
-      templateUrl: 'leaderboard.html'
+    when('/canvas/embedded/engagement_index', {
+      templateUrl: 'engagement_index.html'
     }).
     when('/canvas/embedded/points_configuration', {
       templateUrl: 'points_configuration.html'
