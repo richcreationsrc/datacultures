@@ -19,6 +19,12 @@
     when('/canvas/embedded/leaderboard', {
       templateUrl: 'leaderboard.html'
     }).
+    when('/canvas/embedded/points_configuration', {
+      templateUrl: 'points_configuration.html'
+    }).
+    when('/points_configuration', {
+      templateUrl: 'points_configuration.html'
+    }).
     // Redirect to a 404 page
     otherwise({
       templateUrl: '404.html'

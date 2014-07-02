@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html ng-app="GalleryApp" ng-controller="GalleryController">
+<head>
+<title>Gallery Prototype</title>
+<link rel="stylesheet" type="text/css" href="style.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js" type="text/javascript"></script>
+<script src="maincontroller.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
+</head>
+
+<body> -->
+
+<div id="gallery" ng-controller="GalleryController" class= "dc-gallery">
+
+  <h1>
+    Gallery Prototype (Front-End)
+  </h1>
+  Items {{items}}
+
+  Select Module: <select ng-model="filterModules.types" ng-options="item.display for item in moduleOptions.types" ng-change="sortType(type)"></select>
+
+  Filter by: <select ng-model="filterGallery.types" ng-options="item.name for item in filterOptions.types" ng-change="sortType(type)"></select>
+
+  Sort by: <select ng-model="sortMethod" ng-options="sortOptions as sortOptions.display for sortOptions in sortOptions" ng-change="switch(sortMethod)">
+  <option value="">Choose One</option></select>
+
+  <span class="label">Search For Student:</span>
+  <input type="text" ng-model="search.author">
+  <div id="light" class="white_content">
+    <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="/close.gif" border=0 id="close"></a>
+    <div ng-view></div>
+  </div>
+  <div id="fade" class="black_overlay"></div>
+
+  <div ng-repeat="files in items | orderBy:sortGallery | filter:customFilter | filter:search">
+    <div class="image">
+    <p class="caption">{{files.title}} - Module {{files.module}} <br>
+    Submitted by: {{files.author}} <br>
+    Date: {{files.date}} <br>
+    Likes: {{files.numLikes}}
+    <button ng-click="like(files.id)">{{files.liked}}</button></p>
+    <a ng-href="/gallery/{{files.id}}" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('close').style.display='block';" onclick="togglePOP('light')"><img class="thumbnail" src="{{files.source}}"></a> <br>
+    </div>
+  </div>
+
+</div>
+
+<!-- </body>
+</html>
+ -->
