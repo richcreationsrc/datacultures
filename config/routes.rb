@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   end
   resources :points, only: [:index, :show, :create, :update]
 
-  get '/*url' => 'bootstrap#index', :defaults => { :format => 'html' }
+  #get '/*url' => 'bootstrap#index', :defaults => { :format => 'html' }
 end
