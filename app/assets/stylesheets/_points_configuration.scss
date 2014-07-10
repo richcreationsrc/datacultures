@@ -3,28 +3,19 @@
     border-collapse:collapse;
     border:1px solid black;
   }
-  // tr>th {
-  //   text-align: center;
-  // }
-  // tr>td {
-  //   text-align: center;
-  // }
-  tr>td:nth-child(2) {
-    text-align: left;
-  }
-  tr>td:nth-child(1) {
-    display: none;
-  }
-  tr>th:nth-child(1) {
-    display: none;
-  }
   input {
     width:40px;
+  }
+  .dc-text-left {
+    text-align: left;
+  }
+  .dc-text-hidden {
+    display: none;
   }
   .dc-text-center {
     text-align: center;
   }
-  .dc-cell-center {
+  .dc-cell-padding {
     padding-top: 15px;
   }
   .dc-title {
