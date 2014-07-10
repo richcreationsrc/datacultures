@@ -1,78 +1,63 @@
 .dc-points-configuration{
-  html, body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
   table, th, td {
     border-collapse:collapse;
     border:1px solid black;
   }
-  th, td {
-    padding:5px;
-  }
-  tr>th {
-     text-align: center;
-  }
-  tr>td {
-    text-align: center;
-  }
-  tr>td:nth-child(2) {
-    text-align: left;
-  }
-  tr>td:nth-child(1) {
-    display: none;
-  }
-  tr>th:nth-child(1) {
-    display: none;
-  }
   input {
     width:40px;
   }
-  #title {
+  .dc-text-left {
+    text-align: left;
+  }
+  .dc-text-hidden {
+    display: none;
+  }
+  .dc-text-center {
+    text-align: center;
+  }
+  .dc-cell-padding {
+    padding-top: 15px;
+  }
+  .dc-title {
     text-align: center;
     font-size: 35px;
     font-family: 'Lato', sans-serif;
     margin-bottom: 30px;
   }
-  .buttons_wrapper {
+  .dc-buttons-wrapper {
     position: relative;
   }
-  .activities_table_title {
+  .dc-activities-table-title {
     float: left;
     position: relative;
     margin-bottom: 1%;
   }
-  .activitiesTable {
+  .dc-activities-table{
     display: block;
     margin: 4px auto 5px;
     position: relative;
     width: 100%;
   }
-  .removed_table_title {
+  .dc-removed-table-title {
     margin-bottom: 22px;
     margin-top: 60px;
   }
-  .wrapper {
+  .dc-wrapper {
     float: right;
     margin-top: 2%;
     position: relative;
-    text-align: center;
   }
-  #delete_input, .points_input {
-    width: 21px;
-  }
-  .activity_form {
-    margin: 50px;
-  }
-  .points_input {
+  .dc-points-input {
+    width: 40px;
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    width: 40px;
   }
   .main {
     margin: 0 auto;
     width: 50%;
+  }
+  .btn-default {
+    background: rgb(238,238,238);
   }
 }
