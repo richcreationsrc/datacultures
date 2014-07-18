@@ -1,14 +1,19 @@
 /* BODY */
 .dc-engagement-index {
 
+
   .dc-btn-info {
     background-color: #46b0cf;
-    background-image: linear-gradient(to bottom, #5bc0de, #2596b8);
+    // background-image: linear-gradient(to bottom, #5bc0de, #2596b8);
+    //@include background-image(linear-gradient(to bottom, white, #dddddd));
+    +linear-gradient(left top, #fff, #ddd);
+    // +linear-gradient(color-stops(white, black), bottom)
     background-repeat: repeat-x;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   }
+
   .dc-engagement-search {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -24,9 +29,10 @@
     transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
     vertical-align: middle;
     width: 186px;
-  }
-  .dc-engagement-search:focus {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+
+      &:focus {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+      }
   }
   .dc-header-color {
     background: none repeat scroll 0 0 #e4e9ed;
