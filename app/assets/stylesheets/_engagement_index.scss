@@ -1,19 +1,14 @@
 /* BODY */
 .dc-engagement-index {
 
-
   .dc-btn-info {
+    @include background(linear-gradient(#5bc0de, #2596b8));
     background-color: #46b0cf;
-    // background-image: linear-gradient(to bottom, #5bc0de, #2596b8);
-    //@include background-image(linear-gradient(to bottom, white, #dddddd));
-    +linear-gradient(left top, #fff, #ddd);
-    // +linear-gradient(color-stops(white, black), bottom)
     background-repeat: repeat-x;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   }
-
   .dc-engagement-search {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -48,15 +43,7 @@
     margin-bottom: 25px;
     margin-top: 50px;
   }
-  .table {
-    margin-bottom: 20px;
-    max-width: 100%;
-    width: 100%;
-  }
-  .table-striped {
+  .dc-table-striped-border {
     border: 1px solid #dddddd;
-  }
-  .table-striped tbody tr:nth-child(2n+1) td {
-    background-color: #f9f9f9;
   }
 }
