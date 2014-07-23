@@ -39,11 +39,17 @@
     margin: 0 auto;
     width: 65%;
   }
-  .dc-sort-controls {
-    margin-bottom: 25px;
+  .dc-note {
     margin-top: 50px;
+  }
+  .dc-sort-controls {
+    margin-bottom: -25px;
+    margin-top: 80px;
   }
   .dc-table-striped-border {
     border: 1px solid #dddddd;
+  }
+  .dc-table-margin {
+    margin-top: 50px;
   }
 }

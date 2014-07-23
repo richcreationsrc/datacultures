@@ -8,7 +8,9 @@
          "position": 0,
          "section": "A",
          "lastupdate": "06/01/2014",
-         "visibility": true
+         "visibility": true,
+         "currentStudent": false,
+         "sharePoints": "YES"
       },
       {
          "id":1,
@@ -18,7 +20,9 @@
          "position":0,
          "section": "B",
          "lastupdate": "04/02/2014",
-         "visibility":true
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "YES"
       },
       {
          "id":2,
@@ -28,7 +32,9 @@
          "position":0,
          "section": "C",
          "lastupdate": "07/03/2014",
-         "visibility":true
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "YES"
       },
       {
          "id":3,
@@ -38,7 +44,9 @@
          "position":0,
          "section": "D",
          "lastupdate": "06/04/2014",
-         "visibility":true
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "YES"
       },
       {
          "id":4,
@@ -48,7 +56,9 @@
          "position":0,
          "section": "A",
          "lastupdate": "06/05/2014",
-         "visibility":true
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "YES"
       },
       {
          "id":5,
@@ -58,7 +68,9 @@
          "position":0,
          "section": "B",
          "lastupdate": "06/06/2014",
-         "visibility":true
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "YES"
       },
       {
          "id":6,
@@ -68,7 +80,9 @@
          "position":0,
          "section": "C",
          "lastupdate": "06/07/2014",
-         "visibility":true
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "YES"
       },
       {
          "id":7,
@@ -78,7 +92,9 @@
          "position":0,
          "section": "D",
          "lastupdate": "06/08/2014",
-         "visibility":true
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "YES"
       },
       {
          "id":8,
@@ -88,7 +104,9 @@
          "position":0,
          "section": "A",
          "lastupdate": "06/09/2014",
-         "visibility":true
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "YES"
       },
       {
          "id":9,
@@ -98,7 +116,9 @@
          "position":0,
          "section": "B",
          "lastupdate": "06/10/2014",
-         "visibility":true
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "YES"
       },
       {
          "id":10,
@@ -108,17 +128,81 @@
          "position":0,
          "section": "C",
          "lastupdate": "06/11/2014",
-         "visibility":true
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "YES"
       },
       {
          "id":11,
-         "firstname":"Daniel",
-         "lastname":"Wee",
-         "points":31,
+         "firstname":"Your",
+         "lastname":"Name",
+         "points":100,
          "position":0,
          "section": "D",
          "lastupdate": "06/12/2014",
-         "visibility":true
+         "visibility":true,
+         "currentStudent": true,
+         "sharePoints": "YES"
+      },
+      {
+         "id":12,
+         "firstname":"STUDENT_FIRST_NO_POINTS",
+         "lastname":"STUDENT_LAST_NO_POINTS",
+         "points":9999,
+         "position":0,
+         "section": "B",
+         "lastupdate": "99/99/9999",
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "NO"
+      },
+      {
+         "id":13,
+         "firstname":"STUDENT_FIRST_NO_POINTS",
+         "lastname":"STUDENT_LAST_NO_POINTS",
+         "points":9999,
+         "position":0,
+         "section": "A",
+         "lastupdate": "99/99/9999",
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "NO"
+      },
+      {
+         "id":14,
+         "firstname":"STUDENT_FIRST_NO_POINTS",
+         "lastname":"STUDENT_LAST_NO_POINTS",
+         "points":9999,
+         "position":0,
+         "section": "C",
+         "lastupdate": "99/99/9999",
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "NO"
+      },
+      {
+         "id":15,
+         "firstname":"STUDENT_FIRST_NO_POINTS",
+         "lastname":"STUDENT_LAST_NO_POINTS",
+         "points":9999,
+         "position":0,
+         "section": "E",
+         "lastupdate": "99/99/9999",
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "NO"
+      },
+      {
+         "id":16,
+         "firstname":"STUDENT_FIRST_NO_POINTS",
+         "lastname":"STUDENT_LAST_NO_POINTS",
+         "points":9999,
+         "position":0,
+         "section": "D",
+         "lastupdate": "99/99/9999",
+         "visibility":true,
+         "currentStudent": false,
+         "sharePoints": "NO"
       }
    ]
 }
