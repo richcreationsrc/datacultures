@@ -21,6 +21,13 @@
         $scope.currStudentID = results.current_canvas_user_id;// simulating the first student in json file is the current user
         $scope.currStudent = $scope.people[$scope.currStudentID];
 
+
+
+
+        alert($scope.currStudentID);
+
+
+        
         //if user chooses not to share EI, remove them from the shared table
         if ($location.path() === '/engagement_index') {
           $scope.currStudent.share = 'NO';
@@ -40,6 +47,7 @@
 
         // Default Sort
         $scope.predicate = 'points';
+        $scope.predicateUnshare = 'section';
     });
 
 

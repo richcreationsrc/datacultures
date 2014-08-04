@@ -38,7 +38,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr data-ng-repeat="students in people | orderBy:predicate:!reverse | filter:search:strict" data-ng-class="{ 'info': $index == 9 }" data-ng-show="visibility">
+        <tr data-ng-repeat="students in people | orderBy:predicate:!reverse | filter:search:strict" data-ng-class="{ info: $index == currStudentID }" data-ng-show="visibility">
           <td class="col-sm-2" data-ng-bind="students.name"></td>
           <td class="col-sm-2" data-ng-bind="students.section"></td>
           <td class="col-sm-2" data-ng-bind="students.share"></td>
@@ -61,7 +61,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr data-ng-repeat="students in noshowStudents | orderBy:predicate:!reverse | filter:search:strict" data-ng-show="visibility">
+        <tr data-ng-repeat="students in noshowStudents | orderBy:predicateUnshare" data-ng-show="visibility">
           <td class="col-sm-2" data-ng-bind="students.name"></td>
           <td class="col-sm-2" data-ng-bind="students.section"></td>
           <td class="col-sm-2" data-ng-bind="students.share"></td>
