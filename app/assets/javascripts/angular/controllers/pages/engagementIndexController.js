@@ -3,7 +3,12 @@
 
   angular.module('datacultures.controllers').controller('EngagementIndexController', function($scope, studentFactory, $location) {
 
-    $scope.shownote = true;
+    $scope.showcaretStudent = false;
+    $scope.showcaretSection = false;
+    $scope.showcaretPoints = false;
+    $scope.showcaretLastPoint = false;
+    $scope.score = 'yes'; //sets default radio button to select the 'yes' option
+
     $scope.showshare = true;
     $scope.showpoints = false;
     $scope.visibility = true;
@@ -23,20 +28,24 @@
 
         // Loop through and remove all students that are not sharing Engagement Index
         for (var i = $scope.people.length-1; i >= 0; i--) {
-          if ($scope.people[i].share === 'NO') {
+          if ($scope.people[i].share === false) {
+            $scope.people[i].share = 'NO';
             $scope.studentToRemove = $scope.people[i];
             $scope.noshowStudents.push($scope.studentToRemove); //push not sharing students to new array
             $scope.people.splice($scope.people.indexOf($scope.studentToRemove), 1); //remove not sharing student
+            continue;
           }
+          $scope.people[i].share = 'YES';
         }
         studentFactory.postStudentStatus($scope.currentStudentID, $scope.shareStatus).
           success(function() {}).
           error(function() {
-            window.alert("Check your internet connection, status was not pushed");
+            window.alert('Check your internet connection, status was not pushed');
           });
 
         // Default Sort
         $scope.predicate = 'points';
+        $scope.predicateUnshare = 'section';
       });
   });
 
