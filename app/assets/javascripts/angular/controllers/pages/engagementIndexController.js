@@ -21,7 +21,6 @@
       success(function(results) {
         $scope.people = results.students; // get from ruby controller
         $scope.currentStudentID = results.current_canvas_user_id; // get from ruby controller
-        // alert(typeof $scope.currentStudentID);
         $scope.currStudent = $scope.people[$scope.currentStudentID];
         $scope.shareStatus = $scope.currStudent.share;
 
@@ -55,6 +54,7 @@
           } else {
             $scope.people[i].highlight = false;
           }
+
           $scope.people[i].share = 'YES'; // if get here, means that the student chose to share EI score
         }
 
